@@ -1,0 +1,8 @@
+version: 2
+
+sources:
+  - name: "source_job_portfolio"
+    database: JOB_PORTFOLIO
+    schema: INPUT_JOB_PORTFOLIO
+    tables:
+      - name: UNCLEANED_DS_JOBS
