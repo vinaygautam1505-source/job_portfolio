@@ -1,0 +1,16 @@
+version: 2
+
+models:
+  - name: dim_job
+    description: "job dimenssion table"
+
+    columns:
+      - name: JOB_RATING
+        description: "jobs rating (0-5)"
+        tests:
+          - not_null
+          - dbt_utils.expression_is_true:
+              arguments:
+                expression: "{{ column_name }} BETWEEN 0 AND 5"
+
+  
