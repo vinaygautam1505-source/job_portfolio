@@ -1,0 +1,7 @@
+SELECT 
+  INDEX_COL,
+  JOB_TITLE,
+  SALARY_ESTIMATE,
+  JOB_RATING,
+  JOB_DESCRIPTION
+FROM {{ ref('stg_job_portfolio') }}
