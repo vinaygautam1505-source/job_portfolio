@@ -16,6 +16,16 @@ models:
         tests:
           - not_null
 
+      - name: COMPANY_NAME
+        description: "company offering the job vacancy"
+        tests:
+          - not_null
+
+      - name: COMPANY_LOCATION
+        description: "company location details"
+        tests:
+          - not_null
+
       - name: SALARY_ESTIMATE
         description: "jobs salary expectation range"
         tests:
