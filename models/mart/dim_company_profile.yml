@@ -1,4 +1,10 @@
-columns:
+version: 2
+
+models:
+  - name: dim_job_details
+    description: "job dimenssion table"
+
+    columns:
       - name: COMPANY_NAME
         description: "company offering the job vacancy"
         tests:
