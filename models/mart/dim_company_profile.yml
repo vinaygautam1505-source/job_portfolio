@@ -1,7 +1,7 @@
 version: 2
 
 models:
-  - name: dim_job_details
+  - name: dim_company_profile
     description: "job dimenssion table"
 
     columns:
@@ -45,10 +45,6 @@ models:
         tests:
           - not_null
 
-      - name: APPROX_REVENUE
-        description: "company's total approximate revenue"
-        tests:
-          - not_null
 
       - name: COMPETITORS
         description: "company's competitors details"
