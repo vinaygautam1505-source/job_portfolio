@@ -1,16 +1,23 @@
 version: 2
 
 models:
-  - name: dim_job
+  - name: dim_job_details
     description: "job dimenssion table"
 
-    columns:
-      - name: JOB_RATING
-        description: "jobs rating (0-5)"
+     columns:
+      - name: INDEX_COL
+        description: "each job's unique serial number"
         tests:
           - not_null
-          - dbt_utils.expression_is_true:
-              arguments:
-                expression: "{{ column_name }} BETWEEN 0 AND 5"
+          - unique
 
+      - name: JOB_TITLE
+        description: "post's designation name"
+        tests:
+          - not_null
+
+      - name: SALARY_ESTIMATE
+        description: "jobs salary expectation range"
+        tests:
+          - not_null
   
