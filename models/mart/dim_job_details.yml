@@ -31,14 +31,6 @@ models:
         tests:
           - not_null
 
-      - name: JOB_RATING
-        description: "jobs rating (0-5)"
-        tests:
-          - not_null
-          - dbt_utils.exression_is_true:
-              arguments:
-                expression: "{{column_name}} BETWEEN 0 AND 5"
-
       - name: JOB_DESCRIPTION
         description: "job's brief description"
         tests:
