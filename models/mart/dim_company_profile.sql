@@ -9,4 +9,4 @@ COMPANY_HEADQUARTERS,
 COMPANY_SIZE,
 APPROX_REVENUE,
 COMPETITORS
-FROM {{ref{'stg_job_portfolio') }}
+FROM {{ ref{'stg_job_portfolio') }}
