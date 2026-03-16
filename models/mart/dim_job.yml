@@ -30,4 +30,9 @@ models:
         description: "jobs salary expectation range"
         tests:
           - not_null
+
+      - name: JOB_DESCRIPTION
+        description: "job's brief description"
+        tests:
+          - not_null
   
