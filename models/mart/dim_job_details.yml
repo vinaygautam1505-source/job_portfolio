@@ -22,7 +22,7 @@ models:
           - not_null
 
       - name: COMPANY_LOCATION
-        description: "company location details"
+        description:
         tests:
           - not_null
 
