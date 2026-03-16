@@ -44,8 +44,6 @@ models:
         description: "company's competitors details"
         tests:
           - not_null
-
-
           
          
          
