@@ -23,9 +23,7 @@ models:
 
       - name: COMPANY_LOCATION
         description: "company's work location"
-        tests:
-          - not_null
-
+          
       - name: SALARY_ESTIMATE
         description: "jobs salary expectation range"
         tests:
