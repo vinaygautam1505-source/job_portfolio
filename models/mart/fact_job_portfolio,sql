@@ -1,0 +1,7 @@
+SELECT
+
+JOB_RATING,
+COMPANY_SIZE,
+APPROX_REVENUE,
+
+FROM {{ ref('stg_job_portfolio') }}
