@@ -1,0 +1,23 @@
+version: 2
+models:
+  - name: fact_job_portfolio
+    description: "fact tableof job portfolio"
+
+    columns:
+      - name: JOB_RATING
+        description: "job ratings from 0to 5"
+        tests:
+          - not_null
+          - dbt_utils.expression_is_true:
+              arguments:
+                expression: "{{column_name}} BETWEEN 0 AND 5"
+
+      - name: COMPANY_SIZE
+        description: " no of eployees working"
+        tests:
+          - not_null
+
+      - name: APPROX_REVENUE
+        description: "total approximate revenue ofthe company"
+        tests:
+          - not_null
