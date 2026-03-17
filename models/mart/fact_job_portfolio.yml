@@ -12,12 +12,4 @@ models:
               arguments:
                 expression: "{{column_name}} BETWEEN 0 AND 5"
 
-      - name: COMPANY_SIZE
-        description: " no of eployees working"
-        tests:
-          - not_null
-
-      - name: APPROX_REVENUE
-        description: "total approximate revenue ofthe company"
-        tests:
-          - not_null
+     
