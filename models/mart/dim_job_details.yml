@@ -5,7 +5,7 @@ models:
     description: "job dimenssion table"
 
     columns:
-      - name: INDEX_COL
+      - name: JOB_TITLE_ID
         description: "each job's unique serial number"
         tests:
           - not_null
