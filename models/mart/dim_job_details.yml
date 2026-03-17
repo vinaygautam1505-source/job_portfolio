@@ -20,9 +20,6 @@ models:
         description: "company offering the job vacancy"
         tests:
           - not_null
-
-      - name: COMPANY_LOCATION
-        description: "company's work location"
           
       - name: SALARY_ESTIMATE
         description: "jobs salary expectation range"
