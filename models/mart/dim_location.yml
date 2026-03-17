@@ -1,0 +1,17 @@
+version: 2
+
+models:
+  - name: dim_location
+    description: "Dimension table containing unique job locations"
+
+    columns:
+      - name: company_location_id
+        description: "Surrogate key for each unique location"
+        tests:
+          - not_null
+          - unique
+
+      - name: company_location
+        description: "Name of the job location (city/state)"
+        tests:
+          - not_null
