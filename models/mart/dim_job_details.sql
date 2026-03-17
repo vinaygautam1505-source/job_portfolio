@@ -1,7 +1,6 @@
 SELECT 
   JOB_TITLE_ID,
   JOB_TITLE,
-  COMPANY_NAME,
   SALARY_ESTIMATE,
   JOB_DESCRIPTION
 FROM {{ ref('stg_job_portfolio') }}
