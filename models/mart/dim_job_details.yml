@@ -15,11 +15,6 @@ models:
         description: "post's designation name"
         tests:
           - not_null
-
-      - name: COMPANY_NAME
-        description: "company offering the job vacancy"
-        tests:
-          - not_null
           
       - name: SALARY_ESTIMATE
         description: "jobs salary expectation range"
