@@ -5,7 +5,7 @@ models:
     description: "cleaned view of stg_job_portfolio"
     
     columns:
-      - name: INDEX_COL
+      - name: JOB_TITLE_ID
         description: "each job's unique serial number"
         tests:
           - not_null
