@@ -36,12 +36,6 @@ models:
         tests:
           - not_null
 
-      - name: COMPANY_LOCATION
-        description: "company working in sector"
-        tests:
-          - not_null
-
-
       - name: COMPANY_HEADQUARTERS
         description: "company's headquarter location"
         tests:
