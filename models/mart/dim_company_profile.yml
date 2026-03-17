@@ -37,6 +37,16 @@ models:
         tests:
           - not_null
 
+      - name: COMPANY_SIZE
+        description: " no of eployees working"
+        tests:
+          - not_null
+
+      - name: APPROX_REVENUE
+        description: "total approximate revenue ofthe company"
+        tests:
+          - not_null
+
       - name: COMPANY_HEADQUARTERS
         description: "company's headquarter location"
         tests:
