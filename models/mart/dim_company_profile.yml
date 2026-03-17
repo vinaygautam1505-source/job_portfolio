@@ -9,7 +9,8 @@ models:
       - name: COMPANY_ID
         description: "company's unique identity"
         tests:
-          -not_null
+          - not_null
+          - unique
           
       - name: COMPANY_NAME
         description: "company offering the job vacancy"
