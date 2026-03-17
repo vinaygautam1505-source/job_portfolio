@@ -1,8 +1,6 @@
 SELECT 
-  ROW_NUMBER() OVER (ORDER BY job_title) AS job_title_id,
+  ROW_NUMBER() OVER (ORDER BY JOB_TITLE) AS job_title_id,
   JOB_TITLE,
-  JOB_DESCRIPTION
-FROM (
-  SELECT DISTINCT JOB_TITLE, JOB_DESCRIPTION 
-  FROM {{ ref('stg_job_portfolio') }}
-)
+  MAX(JOB_DESCRIPTION) AS JOB_DESCRIPTION
+FROM {{ ref('stg_job_portfolio') }}
+GROUP BY JOB_TITLE
